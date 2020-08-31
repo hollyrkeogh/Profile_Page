@@ -7,19 +7,81 @@
         <title></title>
         <meta name="description" content="">
 
-        <link rel="shortcut icon" href="favicon.ico">
-
+        <link rel="shortcut icon" href="images/icon.png">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/html5-boilerplate.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
 
     <body>
-        <p>Hello Front Row Viewers!</p>
-
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <div class="area">
+            <nav class="nav" id="nav">
+                |<a class="nav-item" href="#bigger-content"> About </a> |
+                |<a class="nav-item" href="#whoami">Contact</a>|
+             </nav>
+             <p
+                class="typewrite" 
+                data-period="2000" 
+                data-type='[ "Hey,", "I&#39;m Holly" ]'>
+                <span class="wrap"></span>
+            </p>
+            <div class="image"> 
+                <img src="images/front-apge.svg" alt="">
+                
+             </div>
+                <ul class="circles">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                </ul>
+        </div >
+        <div class="color">
+             <div class="bigger-content" id="bigger-content">
+                 <section class="whoami" id="thought">
+                         <h3>Who am i?</h3>
+                     </section>
+                 <aside class="content2" >
+                    <p>And I'm trying something new here. </p>
+                    <p>I'm interested in absolutly anything dog related, and trying my hand in the tech world. I'm a Program Coordinator at Spacecubed, organising and logistics for <inline class="shecodes">She Codes</inline> and <inline class="pluseight">Plus Eight</inline>. I love working with <i>"idea's people"</i> as I am not one. Execute and brining things to life is an amazing feeling </br></br>
+                        I've been coding and been a member of the She Codes Community since 2018, I joined the Spacecubed community in 2019 and now I'm surround by amazing devs and champions of the community, which peaked my interest back in to coding.</p> 
+                     <p class="subtitle"> And thats why I'm here</p>
+                     <img src="images/me-holly.png" alt="Holly.">
+                 </aside>
+             </div>
+             <div class="bigger-content2">
+                 <aside class="content3" >
+                     <form name="contact" netlify>
+                         <div class="form-icon">
+                             <i class="fa fa-user fa-lg icon"></i>
+                             <input id="name" type="text" name="name" placeholder="Name" />
+                         </div>
+                         <div class="form-icon">
+                             <i class="fa fa-envelope-o fa-lg icon"></i>
+                             <input id="email" name="email" type="email" placeholder="Email" />
+                         </div>
+                         <div class="form-icon">
+                             <i class="fa fa-comments fa-lg icon"></i>
+                             <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
+                         </div>
+                         <button type="submit">Message me</button>
+                     </form>
+                     <div class="myself">
+                         <img src="images/mailbox.svg" alt="Contact me." class="mailbox">
+                     </div>
+                 </aside>
+                 <section class="whoami" id="thought">
+                     <h3>Contact me</h3>
+                 </section>
+              </div>
+         </div>
+        </div>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
     </body>

@@ -1,6 +1,7 @@
 /* ==========================================================================
    Your custom CSS styles
    ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Gravitas+One&family=Open+Sans&display&ffamily=Montserrat&Gloria+Hallelujah&Nothing+You+Could+Do&display=swap');
 
 
 
@@ -51,3 +52,377 @@
 .clearfix {
     *zoom: 1;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+body, html {
+    height: 100%;
+    margin: 0 auto 
+}
+h1 {
+    font-family: 'Gravitas One', cursive;
+    font-size:2.4rem;
+}
+h3 {
+    text-transform: uppercase;
+}
+body {
+    font-family: 'Arvo', serif;
+    font-size: 1rem;
+    font-weight: bold;
+    height: calc(100% - 14px);
+
+}
+.bigger-content {
+    display:flex;
+    width:80%;
+    margin:auto;
+    padding-bottom:1%;
+    
+    z-index:-1;
+}
+
+.color {
+    background: #d6e1fe;
+    border-top:2px dashed black;
+    padding-top:1%;
+}
+.bigger-content2 {
+    display:flex;
+    max-width:80%;
+    margin:auto;
+    justify-content: center;
+    padding-bottom:1%;
+}
+.whoami {
+    text-align: center;
+    padding:4%;
+    z-index:0;
+}
+.whoami h3 {
+    color:black;
+    text-shadow: 1px 3px #fdefe3;
+}
+.typewrite {
+    font-size: 3rem;
+    color: #7b8cd9;
+    transform: translate(60%);
+}
+
+/*NAVIGATION*/
+.nav a{
+    color: white;
+    padding:1%;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #7b8cd9;
+    font-weight: bolder;
+    cursor: grab;
+}
+.nav {
+    color:white;
+    display: flex;
+    justify-content: center;
+    max-width:20%;
+    transform: translate(270%);
+}
+.nav-item.hover{
+    display: none;
+}
+.nav-item.hover:hover {
+    display: block;
+    opacity: 1;
+    color:black;
+}
+.image {
+    max-width:55%;
+    padding-bottom: auto 0;
+
+}
+.beers{
+    position: inherit;
+    top: 75%;
+}
+.container {
+  position: absolute;
+  left:60%;
+  top:80%;
+}
+
+.area{
+    background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+
+
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Intro to me  */
+.content2{
+    background: white;
+    padding: 3%;
+    border-radius: 5%;
+    width:68%;
+    display:flex;
+    flex-flow:wrap;
+    padding-right:2%;
+
+}
+.content2 img  {
+    width:40%;
+    border-radius: 50%;
+    align-self: flex-start;
+}
+.shecodes {
+color:#79479c;
+}
+.pluseight {
+    color:#02d5fe;
+}
+.subtitle {
+    text-transform: uppercase;
+    font-size: .9rem;
+    text-decoration: underline;
+    font-style: italic;
+}
+/*FORM */
+form {
+    width:60%;
+    max-width: 400px;
+    margin: 0 auto;
+    display:inline-block;
+    margin-top:7%;
+}
+
+.form-icon {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.icon {
+    padding:3%;
+    color: #82b5a6;
+}
+form label {
+    display: block;
+    font-weight: bold;
+    color: black;
+}
+
+form input, form textarea {
+    display: inline;
+    width: 95%;
+    padding: 5px 10px;
+    border-radius: 5px
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px 0 10px;
+    border:none;
+}
+
+form button {
+    color: black;
+    padding: 10px 15px;
+    margin: 20px auto 10px;
+    display: block;
+    cursor: pointer;
+    background:white;
+    border:none;
+}
+
+form button:hover {
+    background: #82b5a6;
+    color: white;
+    border:none;
+}
+
+.myself img {
+    max-width: 80px
+
+}
+.content3 {
+    background: white;
+    padding-left: 3%;
+    border-radius: 2%;
+    border-top-right-radius: 60%;
+    width:60%;
+    display:flex;
+    justify-content: center;
+
+}
+
+/*BUBBLE'S */
+#thought {
+    display:flex;
+    background-color:#fff;
+    padding:20px;
+    border-radius:30px;
+    min-width:40px;
+    max-width:220px;
+    min-height:40px;
+    margin:20px;
+    position:relative;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+  }
+  #thought:before,
+  #thought:after {
+    content:"";
+    background-color:#fff;
+    border-radius:50%;
+    display:block;
+    position:absolute;
+  }
+  #thought:before {
+    width:44px;
+    height:44px;
+    top:-12px;
+    left:40px;
+    box-shadow:-50px 30px 0 -12px #fff;
+  }
+  #thought:after {
+    bottom:-10px;
+    right:26px;
+    width:30px;
+    height:30px;
+    box-shadow:40px -34px 0 0 #fff,
+               -28px -6px 0 -2px #fff,
+               -24px 17px 0 -6px #fff,
+               -5px 25px 0 -10px #fff;
+    
+  }
