@@ -14,8 +14,9 @@
    Your custom CSS styles for smartphones and screens smaller than 480 px
    ========================================================================== */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1130px) {
     /* insert styles here */
+    
 }
 
 
@@ -102,12 +103,13 @@ body {
 }
 .whoami h3 {
     color:black;
-    text-shadow: 1px 3px #fdefe3;
+    text-shadow: 1px 3px #7b8cd9;
 }
-.typewrite {
-    font-size: 3rem;
+.scroll {
+    font-size: 260%;
     color: #7b8cd9;
-    transform: translate(60%);
+    transform: translate(60%,100%);
+    overflow:wrap;
 }
 
 /*NAVIGATION*/
@@ -157,15 +159,14 @@ body {
     background: #4e54c8;  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
-
-
+    overflow:hidden;
 }
 
 .circles{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 96%;
     height: 100%;
     overflow: hidden;
 }
@@ -330,7 +331,7 @@ form {
 }
 .icon {
     padding:3%;
-    color: #82b5a6;
+    color: #7b8cd9;
 }
 form label {
     display: block;
@@ -342,16 +343,16 @@ form input, form textarea {
     display: inline;
     width: 95%;
     padding: 5px 10px;
-    border-radius: 5px
+    
     font-size: 15px;
     line-height: 1.5;
-    color: #666666;
+    color: #7b8cd9;
     display: block;
     width: 100%;
     height: 50px;
     border-radius: 25px;
     padding: 0 30px 0 10px;
-    border:none;
+    border: solid 1px grey;
 }
 
 form button {
@@ -365,7 +366,7 @@ form button {
 }
 
 form button:hover {
-    background: #82b5a6;
+    background:#7b8cd9;
     color: white;
     border:none;
 }
@@ -425,4 +426,22 @@ form button:hover {
                -24px 17px 0 -6px #fff,
                -5px 25px 0 -10px #fff;
     
+  }
+
+  .footer img {
+      max-width:2%;
+      padding:.5%;
+  }
+  .footer a {
+      text-decoration: none;
+  }
+  .footer img:hover {
+    border-bottom: solid 2px black;
+  }
+  .footer {
+      display:block;
+      text-align: center;
+      padding: 1%;
+      border-top: solid 1px black
+      
   }
