@@ -14,10 +14,35 @@
    Your custom CSS styles for smartphones and screens smaller than 480 px
    ========================================================================== */
 
-@media only screen and (max-width: 1130px) {
-    /* insert styles here */
-    
-}
+   @media screen and (max-width: 900px) {
+       .nav {
+          transform: translate(30%, 10%);
+       }
+      .bigger-content {
+        flex-wrap:wrap;
+        justify-content: center;
+        padding:1%;
+      }
+      #bigger-content2 {
+        flex-wrap:wrap;
+        justify-content: center;
+        padding:1%;
+      }
+      .whoami {
+          width:100%;
+      }
+      .content2 {
+          display: flex;
+          flex-wrap:wrap;
+      }
+      .content2 img{
+          min-width:80%;
+          align-self:;
+      }
+      .content3 {
+          order:1;
+      }
+  }
 
 
 
@@ -89,7 +114,7 @@ body {
     border-top:2px dashed black;
     padding-top:1%;
 }
-.bigger-content2 {
+#bigger-content2 {
     display:flex;
     max-width:80%;
     margin:auto;
@@ -128,9 +153,8 @@ body {
 .nav {
     color:white;
     display: flex;
-    justify-content: center;
     max-width:20%;
-    transform: translate(270%);
+    transform: translate(650px, 10px)
 }
 .nav-item.hover{
     display: none;
@@ -160,10 +184,13 @@ body {
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
     overflow:hidden;
+    position: relative;
+    padding:0;
+    margin: 0;
 }
 
 .circles{
-    position: absolute;
+ 
     top: 0;
     left: 0;
     width: 96%;
@@ -296,6 +323,7 @@ body {
     display:flex;
     flex-flow:wrap;
     padding-right:2%;
+    justify-content: center;
 
 }
 .content2 img  {
